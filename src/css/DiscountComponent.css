@@ -1,0 +1,31 @@
+.flag-discount {
+  border-radius: 2px 0 0 2px;
+  color:black;
+  display: block;
+  float: left;
+  padding: 0.1vw 0.2vw;
+  background:  #f8982a;
+  font-size: 1.1vw;
+  font-weight: bolder;
+  position: relative;
+}
+.flag-discount::before,
+.flag-discount::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: block;
+}
+.flag-discount::before {
+  top: 0;
+  border-width: 12px 8px 0 0;
+  border-color:  #f8982a transparent transparent transparent;
+}
+.flag-discount::after {
+  bottom: 0;
+  border-width: 0 8px 12px 0;
+  border-color: transparent transparent  #f8982a transparent;
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+*{
+ font-family:'Amazon Ember', sans-serif;
+}
+
+.MobileDescriptionContainer{
+  display: flex;
+  justify-content:space-evenly;
+  
+}
+
+.MobileDescriptionContainer .mobileShowBlock img{
+  height: 30vw;
+  width: 25vw;
+}
+
+.mobileShowBlock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35vw;
+}
+
+.mobileDescriptionBlock{
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+}
+
+#discountTag{
+  color: rgb(236, 69, 124);
+  font-size: 2vw;
+}
+
+.mobileDescriptionBlock p strong:nth-child(2){
+  font-size: 2vw;
+}
+
+#priceTag{
+  text-decoration: line-through;
+}
+
+.mobileName{
+  font-size: 1.5vw;
+}
+
+.mobilePrice{
+  font-size: 2vw;
+}
+
+.mobileSaled{
+  font-size: 0.8vw;
+  color: gray; 
+}

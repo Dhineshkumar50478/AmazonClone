@@ -1,0 +1,14 @@
+.MobileCollectionContainer{
+  height:auto;
+  width: 30vw;
+  display: flex;
+  gap: 0.5vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slideLayoutBlock{
+  display: flex;
+  align-items: center;
+  gap:0.5vw;
+}

@@ -1,0 +1,14 @@
+.lightningDealBlock{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 1vw;
+  width:7.5vw;
+  color: white;
+  font-weight: bolder;
+  font-size: 0.9vw;
+  border-radius: 0.2vw;
+  padding: 0.4vw;
+  margin:0.3vw 0px;
+  background-color: rgba(221, 23, 62, 0.991);
+}

@@ -1,0 +1,65 @@
+.mobileContainer{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height:18vw;
+  width:80%;
+  padding:10px;
+
+}
+
+.mobileImageContainer{
+ height:18vw;
+ width:20vw;
+}
+
+.mobileImageContainer img{
+  height:15vw;
+  width: 80%;
+}
+
+
+
+.mobileDetailsContainer{
+  height:18vw;
+  width:80vw;
+}
+
+.mobileContainer h3{
+  height: 3vw;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.mobileDetailsContainer p{
+  color: gray;
+  padding:0px 0px 5px 0px;
+}
+
+.mobileDetailsContainer p strong{
+  color: black;
+  font-size: 1.8vw;
+}
+
+.mobileDetailsContainer p span:nth-child(2){
+  text-decoration: line-through;
+}
+
+.mobileDetailsContainer p:nth-child(5){
+ color: black;
+}
+
+.mobileDetailsContainer p span:nth-child(1){
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.mobileContainer button{
+  color: black;
+  background-color: rgba(243, 212, 7, 0.975);
+  border: none;
+  padding:0.6vw;
+  border-radius: 10px;
+}

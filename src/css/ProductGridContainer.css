@@ -1,0 +1,23 @@
+.productShowcase{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  flex-wrap: wrap;
+  height:24vw;
+  width:20vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.productShowcase .product .productImg img{
+  height:7vw;
+  width:9vw;
+}
+
+.productShowcase .product span{
+  max-width: 9vw;  /* Adjust width based on image size */
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

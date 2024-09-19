@@ -1,0 +1,29 @@
+.menuBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(1, 37, 58, 0.705);
+  color: white;
+  height: 3vw;
+}
+
+.menuBlock ul{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap:1vw;
+}
+
+.menuBlock ul li{
+  list-style: none;
+  padding: 5px;
+}
+
+.menuBlock ul li span{
+  font-size: 1.2vw;
+}
+
+.menuBlock ul li:hover{
+  border: 1px solid white;
+  cursor: pointer;
+}

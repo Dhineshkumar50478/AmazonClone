@@ -1,0 +1,64 @@
+.landingPageBlock {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.slideProductBlock {
+  position: relative;
+  width: 100%;
+  height: 25vw;
+  /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/August/Unrec/BAU/21Aug/1-1._CB565867124_.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.slideProductBlock img {
+  height: 20vw;
+  object-fit: cover;
+  object-position: left;
+}
+
+/*SlideBlock */
+.leftSlideBlock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  height: 20vw;
+  width:5vw;
+  left: 1vw;
+  top:1vw;
+}
+
+.rightSlideBlock{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 20vw;
+  width:5vw;
+  right: 1vw;
+  top:1vw;
+}
+.slideProductBlock span{
+  font-size: 3vw;
+}
+
+.slideProductBlock div:active{
+  border: 2px solid rgb(37, 160, 143);
+  border-radius: 5px;
+} 
+
+/*Product ShowCase*/
+
+.productShowcaseBlock{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:3vw;
+  padding:1vw;
+}
+
