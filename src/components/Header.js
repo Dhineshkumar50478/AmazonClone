@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../css/Header.css";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { BsSearch } from "react-icons/bs";
 import { HiChevronDown } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
+import { CartContext } from "../context/CartContextContainer";
 const Header = () => {
+  const {cart} = useContext(CartContext)
   return (
     <>
       <div className="headerBlock">
@@ -52,7 +54,7 @@ const Header = () => {
           <p>Returns & Orders</p>
         </div>
         <div className="cartBlock">
-          <h4>5</h4>
+          <h4>{cart.length}</h4>
           <span><IoCartOutline /></span>
           <p>Cart</p>
         </div>

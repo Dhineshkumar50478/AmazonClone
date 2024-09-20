@@ -2,11 +2,13 @@ import React, { useContext, useCallback } from 'react';
 import '../css/MobileComponent.css';
 import LightningDeal from './LightningDeal';
 import DiscountComponent from './DiscountComponent';
-import OfferComponent from './OfferComponent';
+// import OfferComponent from './OfferComponent';
 import { MobileDescriptionContext } from '../context/MobileDescription';
 import { useNavigate } from 'react-router-dom';
+import { CartContext } from '../context/CartContextContainer';
 
 const MobileComponent = ({ data }) => {
+  const {cart,handleCart} = useContext(CartContext)
   const { handleShowMobileData } = useContext(MobileDescriptionContext);
   const navigate = useNavigate();
 
@@ -17,7 +19,9 @@ const MobileComponent = ({ data }) => {
     },
     [handleShowMobileData, navigate]
   );
-
+   console.log(cart);
+   
+  
   return (
     <>
       {data.map((item, index) => (
@@ -36,7 +40,7 @@ const MobileComponent = ({ data }) => {
             <p>Save extra with No Cost EMI</p>
             <p>{item.deliverytype} <span>Sun, 15 Sept</span></p>
             <p>Service: {item.service}</p>
-            <button>Add to cart</button>
+            <button className='addtoCart-btn' onClick={()=>handleCart(item.description,item.price)}>Add to cart</button>
           </div>
         </div>
       ))}

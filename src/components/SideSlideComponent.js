@@ -9,9 +9,9 @@ const SideSlideComponent = () => {
   return (
     <div className="sideSlideBlock">
       {mobilespec.mobileImgUrl &&
-        Object.values(mobilespec.mobileImgUrl).map((url, index) => (
-          <div key={index} className="slideLayout" onClick={() => handleMobileSpec(mobilespec.color,mobilespec.mobileImgUrl, mobilespec.storageSpec,url)}>
-            <img src={url} alt={`Slide ${index}`} />
+        Object.values(mobilespec.mobileImgUrl).map((url, id) => (
+          <div key={id} className="slideLayout" onClick={() => handleMobileSpec(mobilespec.color,mobilespec.mobileImgUrl, mobilespec.storageSpec,url)}>
+            <img src={url} alt={`Slide ${id}`} />
           </div>
         ))}
     </div>

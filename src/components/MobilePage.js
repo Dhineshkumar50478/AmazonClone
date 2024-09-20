@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 // import MobileDescriptionComponent from './MobileDescriptionComponent'
-import ProductGridContainer from './ProductGridContainer'
+// import ProductGridContainer from './ProductGridContainer'
 import MobileComponent from './MobileComponent'
 const MobilePage = () => {
   const [mobileData,setMobileData]=useState([])

@@ -7,22 +7,30 @@ import Signup from "./Signup";
 import MobilePage from "./MobilePage";
 import MobileDescription from "../context/MobileDescription";
 import MobileDescriptionComponent from "./MobileDescriptionComponent";
+import CartComponent from "./CartComponent";
+import CartContextContainer from "../context/CartContextContainer";
 const Router = () => {
   return (
     <>
-    <MobileDescription>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout/>}>
-           <Route index element={<Landing/>}/>
-           <Route path="/signin" element={<Signin/>}/>
-           <Route path="/signup" element={<Signup/>}/>
-           <Route path="/mobile" element={<MobilePage/>}/>
-           <Route path="/showmobile" element={<MobileDescriptionComponent/>}/>
-          </Route>
-        </Routes>
-      </BrowserRouter>
-      </MobileDescription>
+      <CartContextContainer>
+        <MobileDescription>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Layout />}>
+                <Route index element={<Landing />} />
+                <Route path="/signin" element={<Signin />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/mobile" element={<MobilePage />} />
+                <Route
+                  path="/showmobile"
+                  element={<MobileDescriptionComponent />}
+                />
+                <Route path="/cart" element={<CartComponent />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
+        </MobileDescription>
+      </CartContextContainer>
     </>
   );
 };
